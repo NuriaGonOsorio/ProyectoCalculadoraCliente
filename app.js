@@ -19,7 +19,6 @@ formulario.addEventListener("submit", (evento) => {
     if (numero1.value.trim() === "" || numero2.value.trim() === "") {
         mensajeError.textContent = "Introduce los dos números";
         resultado.textContent = "";
-
         return;
     }
 
@@ -29,7 +28,6 @@ formulario.addEventListener("submit", (evento) => {
     if (!Number.isFinite(valor1) || !Number.isFinite(valor2)) {
         mensajeError.textContent = "Introduce números válidos";
         resultado.textContent = "";
-
         return;
     }
 
@@ -40,24 +38,28 @@ formulario.addEventListener("submit", (evento) => {
         case "sumar":
             resultadoOperacion = valor1 + valor2;
             break;
+
         case "restar":
             resultadoOperacion = valor1 - valor2;
             break;
+
         case "multiplicar":
             resultadoOperacion = valor1 * valor2;
             break;
+
         case "dividir":
             if (valor2 === 0) {
                 mensajeError.textContent = "No se puede dividir entre cero";
                 resultado.textContent = "";
-
                 return;
             }
             resultadoOperacion = valor1 / valor2;
             break;
+
         case "potencia":
             resultadoOperacion = valor1 ** valor2;
             break;
+
         case "resto":
             if (valor2 === 0) {
                 mensajeError.textContent = "No se puede hacer el resto entre cero";
@@ -70,4 +72,12 @@ formulario.addEventListener("submit", (evento) => {
 
         mensajeError.textContent = "";
         resultado.textContent = "Resultado: " + resultadoOperacion;
+});
+
+botonLimpiar.addEventListener("click", () => {
+    numero1.value = "";
+    numero2.value = "";
+    operacion.value = "sumar";
+    mensajeError.textContent = "";
+    resultado.textContent = "";
 });
