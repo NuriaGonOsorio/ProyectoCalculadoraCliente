@@ -1,0 +1,125 @@
+PRUEBAS DE LA CALCULADORA
+
+MÓDULO: Desarrollo Web en Entorno Cliente
+UNIDAD: Tema 2
+
+- Prueba 1: Suma 
+Datos introducidos: 8 y 2
+Resultado esperado: 10
+Resultado obtenido: 10
+Estado: correcto
+
+- Prueba 2: Resta 
+Datos introducidos: 8 y 2
+Resultado esperado: 6
+Resultado obtenido: 6
+Estado: correcto
+
+- Prueba 3: Multiplicación 
+Datos introducidos: 8 y 2
+Resultado esperado: 16
+Resultado obtenido: 16
+Estado: correcto
+
+- Prueba 4: División 
+Datos introducidos: 8 y 2
+Resultado esperado: 4
+Resultado obtenido: 4
+Estado: correcto
+
+- Prueba 5: Potencia 
+Datos introducidos: 2 y 3
+Resultado esperado: 8
+Resultado obtenido: 8
+Estado: correcto
+
+- Prueba 6: Resto 
+Datos introducidos: 7 y 3
+Resultado esperado: 1
+Resultado obtenido: 1
+Estado: correcto
+
+- Prueba 7: Suma 
+Datos introducidos: -3 y 1.5
+Resultado esperado: -1.5
+Resultado obtenido: -1.5
+Estado: correcto
+
+- Prueba 8: Multiplicación 
+Datos introducidos: 0 y 8
+Resultado esperado: 0
+Resultado obtenido: 0
+Estado: correcto
+
+- Prueba 9: Campo vacío
+Datos introducidos: (campo vacío)
+Resultado esperado: Mensaje de error y no se muestra el resultado anterior
+Resultado obtenido: Mensaje de error y no se muestra el resultado anterior
+Estado: correcto
+
+- Prueba 10: Valor no numérico
+Datos introducidos: abc y 2
+Resultado esperado: Mensaje de error indicando que no son válidos los campos
+Resultado obtenido: Mensaje de error indicando que no son válidos los campos
+Estado: correcto
+Observaciones: para realizar esta prueba, se ha cambiado temporalmente el tipo del primer campo de number a text, 
+ya que el navegador no permite introducir letras en un campo numérico. Después de realizar la prueba y comprobar
+que funciona, se volvió a restablecer el tipo a number. 
+
+- Prueba 11: División
+Datos introducidos: 8 y 0
+Resultado esperado: Mensaje de error (no se puede dividir entre 0) y no se muestra el resultado anterior
+Resultado obtenido: Mensaje de error (no se puede dividir entre 0) y no se muestra el resultado anterior
+Estado: correcto
+
+- Prueba 12: Resto
+Datos introducidos: 8 y 0
+Resultado esperado: Mensaje de error (no se puede hacer el resto entre 0) y no se muestra el resultado anterior
+Resultado obtenido: Mensaje de error (no se puede hacer el resto entre 0) y no se muestra el resultado anterior
+Estado: correcto
+
+- Prueba 13: Potencia 
+Datos introducidos: 10 y 400
+Resultado esperado: Mensaje de que el resultado no es un número finito
+Resultado obtenido: Infinity
+Estado: incorrecto
+
+- Prueba 14: Potencia 
+Datos introducidos: -1 y 0.5
+Resultado esperado: Mensaje de que el resultado no es un número finito
+Resultado obtenido: NaN
+Estado: incorrecto
+
+- Prueba 15: Operación desconocida 
+Datos introducidos: 4 y 5
+Resultado esperado: Se rechaza la operación
+Resultado obtenido: no se realiza
+Estado: incorrecto
+
+- Prueba 16: Cálculo correcto, entrada incorrecta y nuevo cálculo correcto 
+Datos introducidos: 5 y 3 (sumar), 5 (sumar) y 10 y 2 (multiplicar) 
+Resultado esperado: resultados y errores se sustituyen correctamente 
+Resultado obtenido: los resultados y los errores se sustituyen correctamente
+Estado: correcto
+
+- Prueba 17: Botón calcular 
+Datos introducidos: 8 y 2
+Resultado esperado: se calcula sin recargas
+Resultado obtenido: se calcula sin que la página se recargue
+Estado: correcto
+
+- Prueba 18: Botón limpiar 
+Datos introducidos: 8 y 4
+Resultado esperado: Se restablece la interfaz
+Resultado obtenido: se restablece la interfaz
+Estado: correcto
+
+- Prueba 19: Intro 
+Datos introducidos: 8 y 2, operación sumar
+Resultado esperado: 10, Se calcula sin recargas
+Resultado obtenido: 10, Se calcula sin recargar la página
+Estado: correcto
+
+
+
+
