@@ -81,26 +81,30 @@ Estado: correcto
 - Prueba 13: Potencia 
 Datos introducidos: 10 y 400
 Resultado esperado: Mensaje de que el resultado no es un número finito
-Resultado obtenido: Infinity
-Estado: incorrecto
+Resultado obtenido: Mensaje "El resultado no es un número finito"
+Estado: correcto
 
 - Prueba 14: Potencia 
 Datos introducidos: -1 y 0.5
 Resultado esperado: Mensaje de que el resultado no es un número finito
-Resultado obtenido: NaN
-Estado: incorrecto
+Resultado obtenido: Mensaje "El resultado no es un número finito"
+Estado: correcto
 
 - Prueba 15: Operación desconocida 
-Datos introducidos: 4 y 5
-Resultado esperado: Se rechaza la operación
-Resultado obtenido: no se realiza
-Estado: incorrecto
+Datos introducidos: 4 y 5, operacion "operacionInventada"
+Resultado esperado: Mensaje de operación no válida y sin ningún resultado
+Resultado obtenido: Mensaje de operación no válida y sin resultados
+Estado: correcto
+Observaciones: para realizar esta prueba, se ha modificado temporalmente desde la consola del navegador el valor del desplegable
+de operaciones para introducir una nueva operación desconocida. Tras comprobar que la calculadora la rechazaba, se volvió a seleccionar
+una operación válida. 
 
 - Prueba 16: Cálculo correcto, entrada incorrecta y nuevo cálculo correcto 
 Datos introducidos: 5 y 3 (sumar), 5 (sumar) y 10 y 2 (multiplicar) 
 Resultado esperado: resultados y errores se sustituyen correctamente 
 Resultado obtenido: los resultados y los errores se sustituyen correctamente
 Estado: correcto
+
 
 - Prueba 17: Botón calcular 
 Datos introducidos: 8 y 2
