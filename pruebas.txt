@@ -64,7 +64,7 @@ Resultado obtenido: Mensaje de error indicando que no son válidos los campos
 Estado: correcto
 Observaciones: para realizar esta prueba, se ha cambiado temporalmente el tipo del primer campo de number a text, 
 ya que el navegador no permite introducir letras en un campo numérico. Después de realizar la prueba y comprobar
-que funciona, se volvió a restablecer el tipo a number. 
+que funciona, se volvió a restablecer el tipo a number.
 
 - Prueba 11: División
 Datos introducidos: 8 y 0
