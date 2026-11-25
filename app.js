@@ -68,10 +68,20 @@ formulario.addEventListener("submit", (evento) => {
             }
             resultadoOperacion = valor1 % valor2;
             break;
+        default:
+            mensajeError.textContent = "Operación no válida";
+            resultado.textContent = "";
+            return;    
     }
 
-        mensajeError.textContent = "";
-        resultado.textContent = "Resultado: " + resultadoOperacion;
+    if (!Number.isFinite(resultadoOperacion)) {
+        mensajeError.textContent = "El resultado no es un número finito";
+        resultado.textContent = "";
+        return;
+    }
+
+    mensajeError.textContent = "";
+    resultado.textContent = "Resultado: " + resultadoOperacion;
 });
 
 botonLimpiar.addEventListener("click", () => {
